@@ -16,6 +16,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "config/initalize-database.js", "database/config.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "config/initalize-database.js"],
   "exclude": ["node_modules"]
 }
