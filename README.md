@@ -28,3 +28,8 @@ There is also a configuration for the CLI tool. Notability, the `tsconfig.orm.js
 
 ### Folder and file structure
 The general structure and importing of files is up to the developer however, this was just the way I have set it up.
+
+
+
+### Issues
+Feel free to open any issues or PRs if you're having trouble or want to add to this repo.
