@@ -9,7 +9,6 @@ const config: Options = {
   user: process.env.MYSQL_USERNAME,
   password: process.env.MYSQL_PASSWORD,
   entities: [User],
-  discovery: { disableDynamicFileAccess: false },
   debug: process.env.NODE_ENV === "development",
 };
 
