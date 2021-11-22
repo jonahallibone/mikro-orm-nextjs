@@ -10,27 +10,33 @@
     ]
   },
   "scripts": {
+    "predev": "yarn create-db",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "mikro-orm": "node --require ts-node/register node_modules/.bin/mikro-orm"
+    "start": "next start"
   },
   "dependencies": {
-    "@babel/plugin-proposal-decorators": "^7.10.5",
-    "@mikro-orm/cli": "^4.0.7",
-    "@mikro-orm/core": "^4.0.7",
-    "@mikro-orm/mysql": "^4.0.7",
-    "@types/node": "^14.11.2",
-    "babel-plugin-transform-typescript-metadata": "^0.3.0",
-    "dotenv": "^8.2.0",
-    "next": "9.5.3",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "@mikro-orm/cli": "^4.5.9",
+    "@mikro-orm/core": "^4.5.9",
+    "@mikro-orm/sqlite": "^4.5.9",
+    "chance": "^1.1.8",
+    "dotenv-flow": "^3.2.0",
+    "next": "^12.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
-    "@types/react": "^16.9.49",
-    "ts-node": "^9.0.0",
-    "typescript": "^4.0.3"
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-decorators": "^7.16.0",
+    "@types/chance": "^1.1.3",
+    "@types/dotenv-flow": "^3.2.0",
+    "@types/node": "^16.11.9",
+    "@types/react": "^17.0.36",
+    "babel-plugin-transform-typescript-metadata": "^0.3.2",
+    "eslint": "<8.0.0",
+    "eslint-config-next": "12.0.4",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
   }
 }

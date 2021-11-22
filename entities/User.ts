@@ -18,9 +18,6 @@ export class User {
   email: string;
 
   @Property({ nullable: true })
-  age?: number;
-
-  @Property({ nullable: true })
   born?: Date;
 
   constructor(name: string, email: string) {
