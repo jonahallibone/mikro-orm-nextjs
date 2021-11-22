@@ -12,6 +12,7 @@ const handler: NextApiHandler = async (req, res) => {
 
   const chance = new Chance();
   const user = new User(chance.name(),chance.email());
+  user.born = chance.birthday();
   await em.persistAndFlush(user);
 
   res.statusCode = 200;
