@@ -13,7 +13,7 @@
     "predev": "yarn create-db",
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "yarn create-db",
+    "prestart": "yarn create-db",
     "start": "next start",
     "create-db": "[ -f test.db ] && exit 0 || yarn mikro-orm schema:create -r"
   },
