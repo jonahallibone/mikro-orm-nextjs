@@ -1,4 +1,4 @@
-import dotenv from "dotenv";
+import dotenv from "dotenv-flow";
 dotenv.config();
 import config from "./config/mikro-orm";
 
