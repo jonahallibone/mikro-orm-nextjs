@@ -1,14 +1,18 @@
+import { NextApiHandler } from 'next';
 import 'reflect-metadata';
-import startOrm from "../../config/initialize-database";
 import { User } from "../../entities/User";
+import getEM from '../../utils/getEM';
+import withORM from '../../utils/withORM';
 
-const handler = async (req, res) => {
-  const orm = await startOrm();
-  const users = await orm.em.find(User, {});
+const handler: NextApiHandler = async (req, res) => {
+  const em = getEM();
+  const users = await em.find(User, {});
 
+  console.log(`context-specific em-ID: ${em.id}`);
+  
   res.statusCode = 200;
   res.setHeader("Content-Type", "application/json");
-  res.end(JSON.stringify({ user: users }));
+  res.end(JSON.stringify(users));
 };
 
-export default handler
+export default withORM(handler);
