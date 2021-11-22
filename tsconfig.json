@@ -26,7 +26,7 @@
     "**/*.ts",
     "**/*.tsx",
     "config/initalize-database.js"
-  ],
+, "pages/api/add.js", "pages/_app.js"  ],
   "exclude": [
     "node_modules"
   ]
