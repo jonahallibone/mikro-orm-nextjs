@@ -5,7 +5,7 @@ const config: Options = {
   dbName: ":memory:",
   type: "sqlite",
   entities: [User],
-  debug: process.env.NODE_ENV === "development",
+  debug: process.env.DEBUG === "true" || process.env.DEBUG?.includes("db"),
 };
 
 export default config;
