@@ -346,15 +346,15 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@mikro-orm/cli@^4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/cli/-/cli-4.5.9.tgz#3e2fdb5c972b0124cc28bba58dd1df32c24a4044"
-  integrity sha512-UiT82KezvYw2J87t19NvIGgtwVZfCJJLoCCuiHcE0VejptnFDpigAYP4iGZULCDdW1kVr2SJYEbwOqcUQIZ+jw==
+"@mikro-orm/cli@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/cli/-/cli-4.5.10.tgz#0d30ca8ca80794e78361080abdb8afb1a548217d"
+  integrity sha512-buPCyaTLKed5Mm2Z0x/feZ06XsPpb84e/FvoWdGfVtZ9JmhqE/SuY+6gp2p/VRH4cp4jLMqc50Ky29FKdG0aWw==
   dependencies:
-    "@mikro-orm/core" "^4.5.9"
-    "@mikro-orm/entity-generator" "^4.5.9"
-    "@mikro-orm/knex" "^4.5.9"
-    "@mikro-orm/migrations" "^4.5.9"
+    "@mikro-orm/core" "^4.5.10"
+    "@mikro-orm/entity-generator" "^4.5.10"
+    "@mikro-orm/knex" "^4.5.10"
+    "@mikro-orm/migrations" "^4.5.10"
     ansi-colors "4.1.1"
     cli-table3 "0.6.0"
     fs-extra "9.1.0"
@@ -362,10 +362,10 @@
     yargonaut "1.1.4"
     yargs "15.4.1"
 
-"@mikro-orm/core@^4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/core/-/core-4.5.9.tgz#1b8fa2915544fc3f00f0b9db100868aeceb5b8f5"
-  integrity sha512-kG7nnchwhtDNjsAJ7Lau9ZsyNQo2rBqZg+6T54A/c6v4/yFRltbg3gv6eMd4vefH6PS2AKa71H5L49P105qYmQ==
+"@mikro-orm/core@^4.5.10", "@mikro-orm/core@^4.5.9":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/core/-/core-4.5.10.tgz#195222654bd1e25648bffd282d13f1c2ad7982b3"
+  integrity sha512-vnSSFGSR/JoGINJlci5fafGSqvLgHx+3Nt3XjnCTNLOjQ0WL7LsdUVwM9FE/W5FipcJRaQfWmY/iLXBqnaarGQ==
   dependencies:
     ansi-colors "4.1.1"
     clone "2.1.2"
@@ -376,29 +376,29 @@
     reflect-metadata "0.1.13"
     strip-json-comments "3.1.1"
 
-"@mikro-orm/entity-generator@^4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/entity-generator/-/entity-generator-4.5.9.tgz#4a071008329838721cd1d9ed88c01440befe6cd5"
-  integrity sha512-KWf7ZE4eFaGGjtHUiqGXTrbTB7IUJF0bKudqUaIK0YM/bu3fG4nFaF++EFe85tgerXLIzWO2aAuix+24AFC2Bw==
+"@mikro-orm/entity-generator@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/entity-generator/-/entity-generator-4.5.10.tgz#97adfee9d1474b6493d460e12878b6aa97e0f57e"
+  integrity sha512-GA3QyQAeV497pXHAxoZ+Z9pHU7L0t4ryTHDAvhwffN4jE6HBCQcx9QJlRnRnzSIiLsYBI9708U+yPzX4tfJkqQ==
   dependencies:
-    "@mikro-orm/knex" "^4.5.9"
+    "@mikro-orm/knex" "^4.5.10"
     fs-extra "9.1.0"
 
-"@mikro-orm/knex@^4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/knex/-/knex-4.5.9.tgz#d43a74dbf81d2e06382a475cf267562151ac0b0e"
-  integrity sha512-6dVwTKV3LMsEWDdYu5AlBSS4/0BaqEXTgAu4Ryyl95r7G+Y717RXI3fE9snRNE3uJU44Pi0O3TuhFYhdCb9arw==
+"@mikro-orm/knex@^4.5.10", "@mikro-orm/knex@^4.5.9":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/knex/-/knex-4.5.10.tgz#1771a0f9fee1b6e30dc34936af5c10b1c1a5e041"
+  integrity sha512-iYSsAlHVNC7m+yz7dDA3JwjBHxyNuGNwQijUpJ6n2Vt55PyorcW4I3wTnHHALUS30Fvjm4TnfZRdio+aQhynsA==
   dependencies:
     fs-extra "9.1.0"
     knex "0.21.19"
     sqlstring "2.3.2"
 
-"@mikro-orm/migrations@^4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/migrations/-/migrations-4.5.9.tgz#d1ab5590263bdeee65d7e4cbac706739d81388c5"
-  integrity sha512-lOCPkhc4V+HzVtTfKUVqX5msdfxvmY9wvPTMbhdIJ0Wp4C78T/YrXy9FD9EUzrY4Sfu6QKgTG7A509GjPjhgoQ==
+"@mikro-orm/migrations@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/migrations/-/migrations-4.5.10.tgz#4f2aa203f9b69483a86d4f9a3b9ea55248ec5d4a"
+  integrity sha512-dnXDIHrOlIZL/ImXLtbxHiNlAHKvxDmXWtL9ejM0kzx7NDDcxIR5aEqabT3DlawaoupyqOVuI30j3trZxiJdeg==
   dependencies:
-    "@mikro-orm/knex" "^4.5.9"
+    "@mikro-orm/knex" "^4.5.10"
     "@types/umzug" "2.3.0"
     fs-extra "9.1.0"
     knex "0.21.19"
