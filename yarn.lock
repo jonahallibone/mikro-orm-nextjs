@@ -359,21 +359,21 @@
     mikro-orm "^5.0.0-dev.527+28e83ef936"
     reflect-metadata "0.1.13"
 
-"@mikro-orm/knex@^5.0.0-dev.527+28e83ef936":
-  version "5.0.0-dev.527"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/knex/-/knex-5.0.0-dev.527.tgz#33774197fdd0fd938c09e3d30025b3e40c7d7ebf"
-  integrity sha512-wIw7/T8XeaZn4e7ZKJ74yW/yBuOQIHrPwLF2fmHxakzRLF/NUlcJgNcuojPVXZimM2kkrXbY5BYWuQ2GahoZCw==
+"@mikro-orm/knex@^5.0.0-dev.599+460a6d52bd":
+  version "5.0.0-dev.599"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/knex/-/knex-5.0.0-dev.599.tgz#8586c15db87d28aff1e79d0c34c7951c4a9a0779"
+  integrity sha512-gChIJokIb2zlqLrN7YDMXQdea3HUyzeMed160R7m+29NKc51aAIBsmYEomQdu8qHdukHza7vA9n0BGSVUdG0Fw==
   dependencies:
     fs-extra "10.0.0"
-    knex "0.95.14"
+    knex "0.95.15"
     sqlstring "2.3.2"
 
-"@mikro-orm/sqlite@^5.0.0-dev.527":
-  version "5.0.0-dev.527"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/sqlite/-/sqlite-5.0.0-dev.527.tgz#9ebba3ab291ce6675975d65b081cc91a05759a55"
-  integrity sha512-3SLX+i0fj+/aW3/cw/Dx7mnWWV5/nF5XwgRqNT1zEpuYPP7T04u5JNyJUg+l6aabHtVaA6u6u18KY2s7mEkitQ==
+"@mikro-orm/sqlite@^5.0.0-dev.599":
+  version "5.0.0-dev.599"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/sqlite/-/sqlite-5.0.0-dev.599.tgz#b7e221f21c006c815665b88e4e607f1582735ba4"
+  integrity sha512-6RYk9U+Q9SRQI6LdHJg2mqTdEY3c/JQx42mfJyUFdPsiTuuxHUEFiA9g3Pyyu5vIfPOo098Pr+BE+q/7Dp8Ajg==
   dependencies:
-    "@mikro-orm/knex" "^5.0.0-dev.527+28e83ef936"
+    "@mikro-orm/knex" "^5.0.0-dev.599+460a6d52bd"
     fs-extra "10.0.0"
     sqlite3 "5.0.2"
     sqlstring-sqlite "0.1.1"
@@ -2536,10 +2536,10 @@ jsprim@^1.2.2:
     array-includes "^3.1.3"
     object.assign "^4.1.2"
 
-knex@0.95.14:
-  version "0.95.14"
-  resolved "https://registry.yarnpkg.com/knex/-/knex-0.95.14.tgz#47eca7757cbc5872b7c9a3c67ae3b7ac6d00cf10"
-  integrity sha512-j4qLjWySrC/JRRVtOpoR2LcS1yBOsd7Krc6mEukPvmTDX/w11pD52Pq9FYR56/kLXGeAV8jFdWBjsZFi1mscWg==
+knex@0.95.15:
+  version "0.95.15"
+  resolved "https://registry.yarnpkg.com/knex/-/knex-0.95.15.tgz#39d7e7110a6e2ad7de5d673d2dea94143015e0e7"
+  integrity sha512-Loq6WgHaWlmL2bfZGWPsy4l8xw4pOE+tmLGkPG0auBppxpI0UcK+GYCycJcqz9W54f2LiGewkCVLBm3Wq4ur/w==
   dependencies:
     colorette "2.0.16"
     commander "^7.1.0"
