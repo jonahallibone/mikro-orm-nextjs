@@ -16,7 +16,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@mikro-orm/cli": "^4.5.9",
+    "@mikro-orm/cli": "^5.1.1",
     "@mikro-orm/core": "^4.5.9",
     "@mikro-orm/sqlite": "^4.5.9",
     "chance": "^1.1.8",
