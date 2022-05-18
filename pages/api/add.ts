@@ -1,6 +1,7 @@
 import Chance from 'chance';
 import { NextApiHandler } from 'next/dist/shared/lib/utils';
 import 'reflect-metadata';
+import { Book } from '../../entities/Book';
 import { User } from "../../entities/User";
 import getEM from '../../utils/getEM';
 import withORM from '../../utils/withORM';
@@ -13,6 +14,11 @@ const handler: NextApiHandler = async (req, res) => {
   const chance = new Chance();
   const user = new User(chance.name(),chance.email());
   user.born = chance.birthday();
+  await em.persistAndFlush(user);
+
+  const book = new Book()
+  book.title = chance.sentence();
+  user.books.add(book);
   await em.persistAndFlush(user);
 
   res.statusCode = 200;
