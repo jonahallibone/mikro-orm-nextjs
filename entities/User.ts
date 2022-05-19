@@ -3,7 +3,11 @@ import {
   Entity,
   Property,  
   Unique,
+  OneToMany,
+  Collection,
+  Cascade,
 } from "@mikro-orm/core";
+import { Book } from "./Book";
 
 @Entity()
 export class User {
@@ -24,4 +28,12 @@ export class User {
     this.name = name;
     this.email = email;
   }
+
+  @OneToMany({
+    entity: () => Book,
+    mappedBy: (book) => book.user,
+    orphanRemoval: true,
+    cascade: [Cascade.ALL],
+  })
+  books = new Collection<Book>(this);
 }
