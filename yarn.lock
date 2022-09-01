@@ -78,16 +78,17 @@
     semver "^7.3.5"
     tar "^6.1.11"
 
-"@mikro-orm/core@5.1.3":
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/core/-/core-5.1.3.tgz#3caaab21cc81f8d4002ce93bfb0a76e2b5525143"
-  integrity sha512-N10ejP9EraJ5icnfjjR5v+8X5VE6fu31W5R3gi6Gd/FOsqUmUx2KEGTEA6j4f6PDstX1tKCyo9G+98LfNwmr4A==
+"@mikro-orm/core@5.4.0":
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/core/-/core-5.4.0.tgz#29432927e6b8462a5ed00e638e523e5c6dd9e895"
+  integrity sha512-x7H7X3EOxyiEuW0kqujTDTGPQsF0iUNHKMh7xxEhzj+4BlYebiAsmTtekoFJ500kcXqt7ICbcOu3RmfLcUSC4w==
   dependencies:
-    dotenv "16.0.0"
-    escaya "0.0.61"
+    acorn-loose "8.3.0"
+    acorn-walk "8.2.0"
+    dotenv "16.0.2"
     fs-extra "10.1.0"
     globby "11.0.4"
-    mikro-orm "^5.1.2"
+    mikro-orm "^5.3.1"
     reflect-metadata "0.1.13"
 
 "@mikro-orm/knex@^5.1.3":
@@ -341,7 +342,14 @@ acorn-jsx@^5.3.2:
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz#7ed5bb55908b3b2f1bc55c6af1653bada7f07937"
   integrity sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==
 
-acorn-walk@^8.1.1:
+acorn-loose@8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/acorn-loose/-/acorn-loose-8.3.0.tgz#0cd62461d21dce4f069785f8d3de136d5525029a"
+  integrity sha512-75lAs9H19ldmW+fAbyqHdjgdCrz0pWGXKmnqFoh8PyVd1L2RIb4RzYrSjmopeqv3E1G3/Pimu6GgLlrGbrkF7w==
+  dependencies:
+    acorn "^8.5.0"
+
+acorn-walk@8.2.0, acorn-walk@^8.1.1:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-8.2.0.tgz#741210f2e2426454508853a2f44d0ab83b7f69c1"
   integrity sha512-k+iyHEuPgSw6SbuDpGQM+06HQUa04DZ3o+F6CSzXMvvI5KMvnaEqXe+YVe555R9nn6GPt404fos4wcgpw12SDA==
@@ -350,6 +358,11 @@ acorn@^8.4.1:
   version "8.6.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.6.0.tgz#e3692ba0eb1a0c83eaa4f37f5fa7368dd7142895"
   integrity sha512-U1riIR+lBSNi3IbxtaHOIKdH8sLFv3NYfNv8sg7ZsNhcfl4HF2++BfqqrNAxoCLQW1iiylOj76ecnaUxz+z9yw==
+
+acorn@^8.5.0:
+  version "8.8.0"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.0.tgz#88c0187620435c7f6015803f5539dae05a9dbea8"
+  integrity sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==
 
 acorn@^8.7.1:
   version "8.7.1"
@@ -729,10 +742,10 @@ dotenv-flow@3.2.0:
   dependencies:
     dotenv "^8.0.0"
 
-dotenv@16.0.0:
-  version "16.0.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.0.tgz#c619001253be89ebb638d027b609c75c26e47411"
-  integrity sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q==
+dotenv@16.0.2:
+  version "16.0.2"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.2.tgz#0b0f8652c016a3858ef795024508cddc4bffc5bf"
+  integrity sha512-JvpYKUmzQhYoIFgK2MOnF3bciIZoItIIoryihy0rIA+H4Jy0FmgyKYAHCTN98P5ybGSJcIFbh6QKeJdtZd1qhA==
 
 dotenv@^8.0.0:
   version "8.6.0"
@@ -810,11 +823,6 @@ escape-string-regexp@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
-
-escaya@0.0.61:
-  version "0.0.61"
-  resolved "https://registry.yarnpkg.com/escaya/-/escaya-0.0.61.tgz#f87a89dd43d877c86b06b55b78b7a465cd2c5c3a"
-  integrity sha512-WLLmvdG72Z0pCq8XUBd03GEJlAiMceXFanjdQeEzeSiuV1ZgrJqbkU7ZEe/hu0OsBlg5wLlySEeOvfzcGoO8mg==
 
 eslint-config-next@12.1.6:
   version "12.1.6"
@@ -1694,10 +1702,10 @@ micromatch@^4.0.4:
     braces "^3.0.1"
     picomatch "^2.2.3"
 
-mikro-orm@^5.1.2:
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/mikro-orm/-/mikro-orm-5.1.2.tgz#d6f10d6f4d55b26a5bc193bc13b4a970d147497b"
-  integrity sha512-Qyy+EZeBRiyzLstX9Ug9vyDvmz9SIgK4g/h4oMSjgv/VyMwboUuIi4NSXc8HqrpolTdotmcsEzM3d23DUZYSsQ==
+mikro-orm@^5.3.1:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/mikro-orm/-/mikro-orm-5.4.0.tgz#09d23a27ab726e5f99439e1c4a75abc409e998a7"
+  integrity sha512-BqKNYzP1DWskNCNiYjnAkxB9r3dsRSRlmzHraX4tkGdjj6Qx6z1cd/G0f4uooVHHaAJ0VxFHDpqdpWFnSKWmuw==
 
 minimatch@^3.0.4:
   version "3.0.4"
